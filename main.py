@@ -27,17 +27,7 @@ mapping = [
 isHit = [ False ] * len(mapping)
 
 def PressKey(keycode):
-    
     Keyboard.PressKeyOnce(keycode)
-
-    # Suppose to fork a process to avoid waiting when calling time.sleep()
-    # However we might need process pool to decrease the latency that
-    # a process instantiate and executes
-    # For now, direct call Keyboard.PressKeyOnce() provides lower latency
-
-    # p = Process(target=Keyboard.PressKeyOnce, args=(keycode,))
-    # p.start()
-    
 
 def sample_handler(data):
 

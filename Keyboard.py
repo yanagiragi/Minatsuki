@@ -113,7 +113,6 @@ def ReleaseKey(hexKeyCode):
                             dwFlags=KEYEVENTF_KEYUP))
     user32.SendInput(1, ctypes.byref(x), ctypes.sizeof(x))
 
-def PressKeyOnce(hexKeyCode, delay=0.01):
+def PressKeyOnce(hexKeyCode):
     PressKey(hexKeyCode)
-    time.sleep(delay)
     ReleaseKey(hexKeyCode)
