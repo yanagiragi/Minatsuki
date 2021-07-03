@@ -1,5 +1,5 @@
 import Keyboard
-import RawInput
+import HIDInput
 from multiprocessing import Process
 
 BTYE_INDEX_RED_DRUM = 43
@@ -78,8 +78,8 @@ if __name__ == '__main__':
         import codecs
         sys.stdout = codecs.getwriter('mbcs')(sys.stdout)
     
-    device = RawInput.Choose_HID_Device()
+    device = HIDInput.Choose_HID_Device()
 
     if device:
         # Loop to capture device input
-        RawInput.Device_Loop(device, sample_handler)
+        HIDInput.Device_Loop(device, sample_handler)
