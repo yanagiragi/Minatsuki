@@ -24,7 +24,7 @@ mapping = [
     [ BTYE_INDEX_RIGHT_PADDLE, Keyboard.VK_SPACE ]
     ]
 
-isHit = [ False ] * len(mapping)
+isHit = [ 0 ] * len(mapping)
 
 def PressKey(keycode):
     Keyboard.PressKeyOnce(keycode)
@@ -33,10 +33,10 @@ def sample_handler(data):
 
     global isHit, mapping
 
-    # print('Raw data: ', end=', ')
-    # for d in data:
-    #     print(format(d, 'x').zfill(2), end=', ')
-    # print()
+    #print('Raw data: ', end=', ')
+    #for d in data:
+    #    print(format(d, 'x').zfill(2), end=', ')
+    #print()
 
     for index in range(0, len(mapping)):
 
@@ -49,12 +49,12 @@ def sample_handler(data):
 
         detection = data[byte_offset]
 
-        if detection > 0 and isHit[index] == False:
+        if detection > 0 and isHit[index] != detection:
             PressKey(keycode)
-            isHit[index] = True
+            isHit[index] = detection
         
         elif detection == 0:
-            isHit[index] = False
+            isHit[index] = detection
 
 if __name__ == '__main__':
     # first be kind with local encodings
