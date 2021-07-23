@@ -48,6 +48,13 @@ VK_W     = 0x57
 VK_X     = 0x58
 VK_Y     = 0x59
 VK_Z     = 0x5A
+VK_ESCAPE      = 0x1B
+VK_BACK        = 0x08
+VK_Volume_Up   = 0xAF
+VK_Volume_Down = 0xAE
+VK_ONE = 0x31
+VK_TWO = 0x32
+
 
 # C struct definitions
 wintypes.ULONG_PTR = wintypes.WPARAM
