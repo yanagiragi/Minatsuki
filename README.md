@@ -32,7 +32,7 @@ Here's my , the cymbals are plugged into correspond coloured 3.5mm jacks, I only
     * Left Cymbal: A
 
     * HiHat(Close): X
-
+ 
     * Snare: C
 
     * Bass: Space
@@ -44,6 +44,8 @@ Here's my , the cymbals are plugged into correspond coloured 3.5mm jacks, I only
     * FloorTom: N
 
     * Right Cymbal: J
+
+    * Left Pedal: S
 
     * Do not bind any joycon button or direct input from the rb4 drum kit, it results in cymbal and drum trigger same note
 
