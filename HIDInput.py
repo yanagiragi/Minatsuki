@@ -55,6 +55,6 @@ def Device_Loop(device, handler):
         print("\nWaiting for data...\nPress any (system keyboard) key to stop...")
         while not kbhit() and device.is_plugged():
             # just keep the device opened to receive events
-            sleep(0.5)
+            sleep(0.01)
     finally:
         device.close()
