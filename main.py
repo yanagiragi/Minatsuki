@@ -25,6 +25,7 @@ BTYE_VALUE_YELLOW_CYMBAL = 129
 BTYE_VALUE_SHARE = 16
 BTYE_VALUE_OPTIONS = 32
 BTYE_VALUE_RIGHT_PADDLE = 1
+BTYE_VALUE_LEFT_PADDLE = 2
 
 BTYE_VALUE_TRIANGLE = 136
 BTYE_VALUE_CIRCLE = 72
@@ -54,9 +55,11 @@ mapping = {
 
 analog_mapping = {
     
-    BTYE_VALUE_OPTIONS:       Keyboard.VK_Volume_Up,    
+    BTYE_VALUE_OPTIONS:       Keyboard.VK_Volume_Up,
     BTYE_VALUE_SHARE:         Keyboard.VK_Volume_Down,
+    
     BTYE_VALUE_RIGHT_PADDLE:  Keyboard.VK_SPACE,
+    BTYE_VALUE_LEFT_PADDLE:   Keyboard.VK_S,
 
     BTYE_VALUE_TRIANGLE:      Keyboard.VK_ONE,          # Self define system key
     BTYE_VALUE_CIRCLE:        Keyboard.VK_TWO,          # Self define system key
